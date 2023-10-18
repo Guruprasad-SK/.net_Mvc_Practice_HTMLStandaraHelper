@@ -1,0 +1,34 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Click Me", "About") <br />
+        @Html.ActionLink("Click Me for student index", "About","Student")
+    <div>
+        @Html.ActionLink("cloic mr for name", "Index", new { name = "Nitish" });
+    </div>
+
+    </div>
+    @{ 
+        string name = "Vinay";
+    }
+    @Html.TextBox("txtcheckbox",name,new { id = "Customid" ,@class="mycustomclass"})
+
+    <br />
+    @Html.CheckBox("checkbox1",false)
+
+    <br />
+
+    @Html.Password("mypassword")
+
+    <br />
+    @Html.RadioButton("radop",new {id=10})
+</body>
+</html>
